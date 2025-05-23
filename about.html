@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush's portfolio</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            background-color: rgb(0, 0, 33);
+            font-family: "Poppins", sans-serif;
+            color: white;
+           
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 45px;
+            background-color: rgb(18, 18, 62);
+            position: fixed;
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 25px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+
+        .rightsection img {
+            margin: 20px 0px;
+            border-radius: 23px;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #00ffff;
+            box-shadow: 0 0 15px #00ffff;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            transform: 0.35s;
+        }
+
+        nav ul li a:hover {
+            color: #a855f7;
+        }
+
+        .family-card {
+            max-width: 400px;
+            margin: 15px;
+            padding: 25px;
+            background: #1c1c3c;
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            font-family: 'Segoe UI', sans-serif;
+            /* text-align: center; */
+        }
+
+        .family-card h1 {
+            color: #00ffff;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .family-details p {
+            font-size: 1.1em;
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        hr {
+            border: 0px;
+            height: 0.2rem;
+            background-color: #a855f7;
+            margin: 45px;
+        }
+
+        .secondsection {
+            padding: 50px 20px;
+            background-color: #0d1b2a;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .secondsection h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #00ffff;
+        }
+
+        .education-card {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1b263b;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+            text-align: left;
+        }
+
+        .edu-item {
+            margin-bottom: 25px;
+        }
+
+        .edu-item p {
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .progress-bar {
+            background-color: #33415c;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 25px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .progress {
+            height: 100%;
+            background: linear-gradient(to right, #00ffff, #00bcd4);
+            color: #000;
+            font-weight: bold;
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .progress.pursuing {
+            background: #ff9800;
+            color: #fff;
+            justify-content: center;
+        }
+
+        .footer {
+            background-color: #0b002d;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .footer h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: white;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .icon-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .icon-block i {
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: white;
+            transition: transform 0.3s ease;
+        }
+
+        .icon-block:hover i {
+            transform: scale(1.2);
+            color: #9370DB;
+            /* Lavender hover */
+        }
+
+        .icon-block span {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><b>Ayush'portfolio</b></div>
+            <div class="right">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div class="family-card">
+                    <h1>Welcome to my Universal</h1>
+                    <div class="family-details">
+                        <p><strong>Father's Name:</strong> Mahesh Kumar</p>
+                        <p><strong>Mother's Name:</strong> Subhita Devi</p>
+                        <p><strong>Brother's Name:</strong> Kapish Kumawat Kumar</p>
+                        <!-- <p><strong>Sister's Name:</strong> Pooja Kumawat</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="ayush.png" width="400px " alt="ayush">
+            </div>
+        </section>
+    </main>
+    <hr>
+    <section class="secondsection">
+        <h2>Education Qulaficartion</h2>
+        <div class="education-card ">
+            <ul>
+                <li><strong>10th Class:</strong> Adarsh Vidya Mandir sr. sec. School, Mandawa — 2021</li>
+                <li><strong>12th Class (Arts):</strong> Adarsh Vidya Mandir sr. sec. School, Mandawa — 2023</li>
+                <li><strong>ITI (Electrician):</strong> Badri Prasad Guljar Kejriwal ITI, Churi Ajitgarh</li>
+                <li><strong>BCA:</strong> JJT University</li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <footer class="footer">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+            <div class="icon-block">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </div>
+            <div class="icon-block">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </div>
+            <div class="icon-block">
+                <i class="fab fa-youtube"></i>
+                <span>Youtube</span>
+            </div>
+            <div class="icon-block">
+                <i class="fas fa-microphone"></i>
+                <span>Podcast</span>
+            </div>
+            <div class="icon-block">
+                <i class="fab fa-x-twitter"></i>
+                <span>X (Twitter)</span>
+            </div>
+            <div class="icon-block">
+                <i class="fab fa-facebook"></i>
+                <span>Facebook</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
