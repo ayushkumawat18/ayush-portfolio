@@ -1,0 +1,76 @@
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .firstsection,
+  .secondsection,
+  .section,
+  .footer,
+  .education-card,
+  .family-card,
+  .contact-section {
+    flex-direction: column !important;
+    align-items: center;
+    width: 100% !important;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .firstsection > div,
+  .secondsection > div,
+  .rightsection,
+  .leftsection {
+    width: 100% !important;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .rightsection img {
+    width: 180px;
+    height: 180px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  p, li {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .icon-block {
+    font-size: 0.9rem;
+  }
+
+  .icon-block i {
+    font-size: 22px;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
